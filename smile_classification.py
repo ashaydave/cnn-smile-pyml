@@ -55,7 +55,7 @@ check_packages(d)
 
 
 
-image_path = './home/txc970-1/raschka_datasets/celeba'
+image_path = './'
 celeba_train_dataset = torchvision.datasets.CelebA(image_path, split='train', target_type='attr', download=False)
 celeba_valid_dataset = torchvision.datasets.CelebA(image_path, split='valid', target_type='attr', download=False)
 celeba_test_dataset = torchvision.datasets.CelebA(image_path, split='test', target_type='attr', download=False)
