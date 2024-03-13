@@ -56,9 +56,9 @@ check_packages(d)
 
 
 image_path = './'
-celeba_train_dataset = torchvision.datasets.CelebA(image_path, split='train', target_type='attr', download=True)
-celeba_valid_dataset = torchvision.datasets.CelebA(image_path, split='valid', target_type='attr', download=True)
-celeba_test_dataset = torchvision.datasets.CelebA(image_path, split='test', target_type='attr', download=True)
+celeba_train_dataset = torchvision.datasets.CelebA(image_path, split='train', target_type='attr', download=False)
+celeba_valid_dataset = torchvision.datasets.CelebA(image_path, split='valid', target_type='attr', download=False)
+celeba_test_dataset = torchvision.datasets.CelebA(image_path, split='test', target_type='attr', download=False)
 
 print('Train set:', len(celeba_train_dataset))
 print('Validation set:', len(celeba_valid_dataset))
